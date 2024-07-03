@@ -1,5 +1,7 @@
+/* Importeer Google Fonts voor Share Tech Mono en Montserrat */
 @import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono|Montserrat:700");
 
+/* Resetten van standaardinstellingen voor alle elementen */
 * {
     margin: 0;
     padding: 0;
@@ -7,88 +9,99 @@
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Box-sizing instellen op border-box voor consistent box model */
     color: inherit;
 }
 
+/* Stijl voor de hele pagina */
 body {
-    background-image: linear-gradient(120deg, #4f0088 0%, #000000 100%);
-    height: 100vh;
+    background-image: linear-gradient(120deg, #4f0088 0%, #000000 100%); /* Achtergrond met lineaire gradiënt */
+    height: 100vh; /* Volledige hoogte van het viewport */
 }
 
+/* Stijl voor de hoofdtekst */
 h1 {
-    font-size: 45vw;
+    font-size: 45vw; /* Responsieve lettergrootte op basis van viewport breedte */
     text-align: center;
-    position: fixed;
-    width: 100vw;
-    z-index: 1;
-    color: #ffffff26;
-    text-shadow: 0 0 50px rgba(0, 0, 0, 0.07);
-    top: 50%;
-    transform: translateY(-50%);
-    font-family: "Montserrat", monospace;
+    position: fixed; /* Vastgezet op het scherm */
+    width: 100vw; /* Volledige breedte van het viewport */
+    z-index: 1; /* Stacking context bovenaan */
+    color: #ffffff26; /* Semi-transparante tekstkleur */
+    text-shadow: 0 0 50px rgba(0, 0, 0, 0.07); /* Tekstschaduw */
+    top: 50%; /* Verticale positie in het midden van het viewport */
+    transform: translateY(-50%); /* Verticale uitlijning */
+    font-family: "Montserrat", monospace; /* Gebruik Montserrat als het lettertype */
 }
 
+/* Stijl voor het hoofdgedeelte */
 div {
-    background: rgba(0, 0, 0, 0);
-    width: 70vw;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0 auto;
-    padding: 30px 30px 10px;
-    box-shadow: 0 0 150px -20px rgba(0, 0, 0, 0.5);
-    z-index: 3;
+    background: rgba(0, 0, 0, 0); /* Doorzichtige achtergrond */
+    width: 70vw; /* Responsieve breedte op basis van viewport breedte */
+    position: relative; /* Relatieve positie voor kind elementen */
+    top: 50%; /* Verticale positie in het midden van het viewport */
+    transform: translateY(-50%); /* Verticale uitlijning */
+    margin: 0 auto; /* Gecentreerde uitlijning op de x-as */
+    padding: 30px 30px 10px; /* Binnenste vulling */
+    box-shadow: 0 0 150px -20px rgba(0, 0, 0, 0.5); /* Schaduweffect */
+    z-index: 3; /* Stacking context boven de achtergrond */
 }
 
-P {
-    font-family: "Share Tech Mono", monospace;
-    color: #f5f5f5;
-    margin: 0 0 20px;
-    font-size: 17px;
-    line-height: 1.2;
+/* Stijl voor paragrafen */
+p {
+    font-family: "Share Tech Mono", monospace; /* Gebruik Share Tech Mono als het lettertype */
+    color: #f5f5f5; /* Witte tekstkleur */
+    margin: 0 0 20px; /* Binnenmarge onderaan */
+    font-size: 17px; /* Lettergrootte */
+    line-height: 1.2; /* Lijnhoogte */
 }
 
+/* Stijl voor span elementen */
 span {
-    color: #f0c674;
+    color: #f0c674; /* Kleur van het span element */
 }
 
+/* Stijl voor i (italic) elementen */
 i {
-    color: #8abeb7;
+    color: #8abeb7; /* Kleur van het italic element */
 }
 
+/* Stijl voor links binnen div elementen */
 div a {
-    text-decoration: none;
+    text-decoration: none; /* Geen onderstreepte links */
 }
 
+/* Stijl voor vetgedrukte tekst */
 b {
-    color: #81a2be;
+    color: #81a2be; /* Kleur van de vetgedrukte tekst */
 }
 
+/* Stijl voor de avatar link */
 a.avatar {
-    position: fixed;
-    bottom: 15px;
-    right: -100px;
-    animation: slide 0.5s 4.5s forwards;
-    display: block;
-    z-index: 4
+    position: fixed; /* Vastgezet op het scherm */
+    bottom: 15px; /* Afstand tot onderkant van viewport */
+    right: -100px; /* Startpositie buiten het scherm */
+    animation: slide 0.5s 4.5s forwards; /* Animatie voor verschijning na 4.5s */
+    display: block; /* Blokweergave voor link */
+    z-index: 4; /* Stacking context boven de inhoud van de div */
 }
 
+/* Stijl voor het avatarbeeld binnen de avatar link */
 a.avatar img {
-    border-radius: 100%;
-    width: 44px;
-    border: 2px solid white;
+    border-radius: 100%; /* Ronde randen */
+    width: 44px; /* Breedte van het beeld */
+    border: 2px solid white; /* Witte rand */
 }
 
+/* Keyframes voor de slide animatie van de avatar link */
 @keyframes slide {
     from {
-        right: -100px;
-        transform: rotate(360deg);
-        opacity: 0;
+        right: -100px; /* Startpositie buiten het scherm */
+        transform: rotate(360deg); /* Volledige rotatie bij aanvang */
+        opacity: 0; /* Start met onzichtbaarheid */
     }
     to {
-        right: 15px;
-        transform: rotate(0deg);
-        opacity: 1;
+        right: 15px; /* Eindpositie rechts van het scherm */
+        transform: rotate(0deg); /* Geen rotatie bij voltooiing */
+        opacity: 1; /* Volledig zichtbaar bij voltooiing */
     }
 }
