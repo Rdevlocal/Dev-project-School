@@ -1,0 +1,24 @@
+# Dev
+
+This is a sample README file for a project called "Dev". 
+
+## Description
+
+The purpose of this project is to rebrand the website of fontys ict deeltijd
+## Installation
+
+To install this project, simply clone the repository and navigate to the project directory.
+
+```bash
+git clone https://github.com/Rdevlocal/Dev-project-School.git
+cd project-name
+```
+
+
+## Contributing
+
+Contributions are welcome! Please fork this repository and submit a pull request with your changes.
+
+## License
+
+no licence
